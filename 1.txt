@@ -1,0 +1,11 @@
+character and enemy animations
+enemy sprites
+more sounds
+repeating background tiles
+obsticle veriety
+npc sprites
+
+territory
+improved map
+equip stuff
+npc code

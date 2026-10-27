@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <!--
+        750px - 250px
+    -->
+    <div id="startingMenu">
+        <h1>Gale's Warren</h1>
+        <h2>Character</h2>
+        <div class="carousel">
+            <div class="carouselOption" data-type="character" data-name="Jerry" id="0" data-desc="Jerry <br><br> Takes reduced damage from all sources and has good luck." style="background-image: url(players/j.webp);">Jerry</div>
+            <div class="carouselOption" data-type="character" data-name="Gary" id="1" data-desc="Gary <br><br>Fragile marksmen with faster recovery times and more ammo." style="background-image: url(players/g.webp);">Gary</div>
+            <div class="carouselOption" data-type="character" data-name="Mary" id="2" data-desc="Mary <br><br>A vampiric entity able to steal health from defeated enemies" style="background-image: url(players/m.webp);">Mary</div>
+        </div>
+        <br><br>
+        <h2>Weapon</h2>
+        <div class="carousel">
+            <div class="carouselOption" data-type="weapon" data-name="Pistol" id="0" data-desc="Pistol <br><br>Fast and reliable with decent damage." style="background-image: url(guns/gun3.webp);">Pistol</div>
+            <div class="carouselOption" data-type="weapon" data-name="Sniper" id="1" data-desc="Sniper rifle <br><br>High dmg with equaly high ammo cost and a long lockout. Will critically hit far away enemies." style="background-image: url(guns/gun4.webp);">Sniper</div>
+            <div class="carouselOption" data-type="weapon" data-name="Machinegun" id="2" data-desc="Sub machinegun <br><br>Sprays a huge amount of bullets at high speed." style="background-image: url(guns/gun2.webp);">Machinegun</div>
+            <div class="carouselOption" data-type="weapon" data-name="Shotgun" id="3" data-desc="Shotgun <br><br>Devistating up close but not much of a range weapon." style="background-image: url(guns/gun1.webp);">Shotgun</div>
+        </div>
+        <br><br>
+        <button id="startGame">START</button>
+    </div>
+
+    <div id="inv" style="display: none;">
+        <div id="realInv">
+            <div id="topTabs">
+                <div id="invTab01">Character</div>
+                <div id="invTab02">Backpack</div>
+                <div id="invTab03">Map</div>
+                <div id="invTab04">Stats</div>
+                <div id="invTab05">Settings</div>
+            </div>
+            <div id="invContent"></div>
+        </div>
+    </div>
+
+    <div id="ui">
+        <div id="healthStat">
+            <div id="healthNum">100</div>
+        </div>
+        <div id="ammoStat">
+            <div id="ammoNum" style="text-align: right;">100</div>
+        </div>
+
+        <div id="currentGunDisplay"></div>
+    </div>
+
+    <div id="dialog" style="display: none;">
+        <img src="">
+        <div id="dialogDisplay">
+            <h1></h1>
+            <p></p>
+            <span>
+                <button></button>
+                <button></button>
+                <button></button>
+            </span>
+        </div>
+    </div>
+
+    <div id="gameOver" style="display: none;">
+        <div>
+            <h1>Game Over</h1>
+            <p id="playerStatView">stats</p>
+            <button id="gameOverScreenContinue">Menu</button>
+        </div>
+    </div>
+
+    <div id="hitIndicator"></div>
+
+    <canvas id="canvas"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
